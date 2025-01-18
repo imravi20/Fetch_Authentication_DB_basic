@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <script>
+        function getAnimals(){
+            fetch("https://fakerapi.it/api/v1/persons")
+            .then(async (response)=>{
+                const finalR= await response.json();
+                console.log(finalR);
+            })
+        }
+    </script>
+    <button onClick=getAnimals()>Get Animals</button>
+</body>
